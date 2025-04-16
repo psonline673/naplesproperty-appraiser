@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cypress Green, Immokalee</title>
+    <link rel="canonical" href="cypress-green-immokalee.html" />
+
+    <meta name="description" content="Discover the charm of Cypress Green in Immokalee, Florida. This blog post explores the community's unique features, amenities, and lifestyle, providing insights for potential residents and visitors alike. Join us as we dive into what makes Cypress Green a desirable place to call home." />
+    <meta name="keywords" content="Cypress Green, Immokalee" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+
+    <!-- Boostrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Custom (Base) CSS -->
+    <link rel="stylesheet" href="home/css/custom.css">
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Cypress Green in Immokalee?","acceptedAnswer":{"@type":"Answer","text":"Cypress Green is a residential community located in Immokalee, Florida, offering a range of homes and amenities designed for comfortable living and an active lifestyle."}},{"@type":"Question","name":"What types of homes are available in Cypress Green?","acceptedAnswer":{"@type":"Answer","text":"Cypress Green features a variety of home styles, including single-family homes with different floor plans, sizes, and designs to suit various preferences and needs."}},{"@type":"Question","name":"What amenities can residents enjoy in Cypress Green?","acceptedAnswer":{"@type":"Answer","text":"Residents of Cypress Green can enjoy amenities such as parks, walking trails, recreational facilities, and community spaces designed for social gatherings and activities."}},{"@type":"Question","name":"Is Cypress Green a family-friendly community?","acceptedAnswer":{"@type":"Answer","text":"Yes, Cypress Green is considered a family-friendly community, with features such as playgrounds, family-oriented events, and access to quality schools and recreational activities."}},{"@type":"Question","name":"How can I find out more about purchasing a home in Cypress Green?","acceptedAnswer":{"@type":"Answer","text":"To learn more about purchasing a home in Cypress Green, you can contact local real estate agents, visit the community\u2019s official website, or attend open houses to explore available properties."}}]}</script>
+    <style>
+        body {
+            overflow-x: hidden !important;
+        }
+        .small.navbar-brand {
+            width: 300px !important;
+            white-space: break-spaces !important;
+        }
+        .gallery-image:hover{
+            opacity: 0.4;
+            cursor: pointer;
+            border: solid black 2px;
+        }
+        .section-content a {
+            color: var(--base-primary);
+        }
+        .gradient-card:hover .btn-learn .img-fluid, .services-carousel .owl-item.active.center .gradient-card .btn-learn .img-fluid{
+            content:url("home/media/imgs/language_folder/learn_more_btn_normal.png");
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 200000; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content, #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {-webkit-transform:scale(0)}
+            to {-webkit-transform:scale(1)}
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0)}
+            to {transform:scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Top Infobar -->
+<section id="top-infobar" class="navbar d-none d-lg-block p-1 top-infobar">
+    <div class="container-md justify-content-md-between">
+        <div class="d-inline-flex gap-2 align-items-center top-infobar-address"  >
+            <!-- Address -->
+            <svg style="display: none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt"
+                 viewBox="0 0 16 16">
+                <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+            <span class="small"></span>
+        </div>
+
+        <div class="d-inline-flex gap-4 align-items-center top-infobar-icons " style="display: none !important;">
+            <!-- Social Icon(s) -->
+            <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                     class="bi bi-facebook mb-1" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+            </a>
+
+            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                     class="bi bi-instagram mb-1" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg>
+            </a>
+
+            <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                     class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
+                    <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
+            </a>
+
+            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                     class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
+                    <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
+
+                </svg>
+            </a>
+
+
+            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank" style="display: none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                     class="bi bi-youtube mb-1" viewBox="0 0 16 16">
+                    <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Header (sm) with Top Navbar -->
+<header id="header" class="position-relative header-sm"
+        style="background: url(property-inspection-6127453.jpg) no-repeat center;background-size: cover;background-attachment: fixed;">
+    <!-- Top Navbar -->
+    <nav class="navbar bg-transparent sticky-top top-navbar navbar-dark">
+        <div class="container-md justify-content-md-between">
+            <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center" href="index.html">
+                <!-- Brand Logo/Mark -->
+                <img alt="Naples-property appraiser" fetchpriority="low" async="true" defer="true" src="logo.png" onerror="this.remove()" style="display: inherit"
+                     height="40" />
+                <!-- Brand Name -->
+                <span class="small navbar-brand">Naples-property appraiser</span>
+            </a>
+
+            <!-- Mobile Menu Icons -->
+            <div class="d-lg-none mobile-call-menu-icons">
+                <a href="tel:+" class="text-decoration-none" title="Contact Number" style="font-size: 20px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                         fill="currentColor">
+                        <path
+                            d="M17.4097 11C17.1897 11 16.9597 10.93 16.7397 10.88C16.2945 10.7805 15.8568 10.6501 15.4297 10.49C14.9658 10.3212 14.4558 10.33 13.998 10.5146C13.5402 10.6992 13.1668 11.0466 12.9497 11.49L12.7297 11.95C11.7585 11.3992 10.8613 10.7271 10.0597 9.95C9.28254 9.14837 8.61048 8.25118 8.05968 7.28L8.51968 7.07C8.96305 6.85292 9.31046 6.47953 9.49508 6.02169C9.67969 5.56385 9.68845 5.05391 9.51968 4.59C9.36087 4.15903 9.23059 3.71808 9.12968 3.27C9.07968 3.05 9.03968 2.82 9.00968 2.6C8.88825 1.89562 8.51931 1.25774 7.96931 0.801239C7.4193 0.344737 6.72438 0.0996088 6.00968 0.11H2.99968C2.57693 0.109446 2.15883 0.198248 1.7728 0.370584C1.38677 0.54292 1.04152 0.794898 0.759684 1.11C0.472004 1.43365 0.257799 1.81575 0.131787 2.23004C0.00577499 2.64432 -0.0290571 3.08098 0.0296837 3.51C0.573271 7.67214 2.47489 11.5387 5.43968 14.51C8.41103 17.4748 12.2775 19.3764 16.4397 19.92C16.5695 19.9299 16.6999 19.9299 16.8297 19.92C17.5671 19.9211 18.2791 19.6505 18.8297 19.16C19.1448 18.8782 19.3968 18.5329 19.5691 18.1469C19.7414 17.7609 19.8302 17.3428 19.8297 16.92V13.92C19.8243 13.229 19.5805 12.5611 19.1396 12.0291C18.6987 11.4971 18.0876 11.1336 17.4097 11ZM17.8997 17C17.8994 17.1395 17.8698 17.2775 17.813 17.4049C17.7562 17.5324 17.6733 17.6465 17.5697 17.74C17.4601 17.8399 17.3297 17.9141 17.1878 17.9573C17.046 18.0006 16.8963 18.0117 16.7497 17.99C13.018 17.5026 9.54993 15.802 6.87968 13.15C4.20716 10.4775 2.49171 6.99737 1.99968 3.25C1.97796 3.10333 1.98912 2.95367 2.03236 2.81185C2.0756 2.67003 2.14983 2.5396 2.24968 2.43C2.3443 2.32515 2.46006 2.24154 2.58933 2.18466C2.7186 2.12778 2.85846 2.09892 2.99968 2.1H5.99968C6.23085 2.09435 6.45682 2.16898 6.63915 2.3112C6.82147 2.45341 6.94888 2.65442 6.99968 2.88C6.99968 3.15 7.08968 3.43 7.14968 3.7C7.26526 4.22386 7.419 4.73857 7.60968 5.24L6.20968 5.9C5.96905 6.01046 5.78204 6.21185 5.68968 6.46C5.58967 6.70346 5.58967 6.97654 5.68968 7.22C7.12888 10.3028 9.60693 12.7808 12.6897 14.22C12.9331 14.32 13.2062 14.32 13.4497 14.22C13.6978 14.1276 13.8992 13.9406 14.0097 13.7L14.6397 12.3C15.1556 12.4881 15.6834 12.6418 16.2197 12.76C16.4797 12.82 16.7597 12.87 17.0297 12.91C17.2553 12.9608 17.4563 13.0882 17.5985 13.2705C17.7407 13.4529 17.8153 13.6788 17.8097 13.91L17.8997 17ZM11.9997 0C11.7697 0 11.5297 0 11.2997 0C11.0345 0.0225434 10.7891 0.14952 10.6175 0.352997C10.4459 0.556474 10.3621 0.819784 10.3847 1.085C10.4072 1.35022 10.5342 1.59562 10.7377 1.76721C10.9412 1.93881 11.2045 2.02254 11.4697 2H11.9997C13.591 2 15.1171 2.63214 16.2423 3.75736C17.3675 4.88258 17.9997 6.4087 17.9997 8C17.9997 8.18 17.9997 8.35 17.9997 8.53C17.9775 8.79381 18.0609 9.05565 18.2314 9.2581C18.402 9.46055 18.6459 9.5871 18.9097 9.61H18.9897C19.24 9.61102 19.4816 9.5181 19.6668 9.34961C19.8519 9.18113 19.9672 8.94932 19.9897 8.7C19.9897 8.47 19.9897 8.23 19.9897 8C19.9897 5.88 19.1482 3.84668 17.6501 2.34668C16.1519 0.846674 14.1197 0.00265 11.9997 0ZM13.9997 8C13.9997 8.26522 14.105 8.51957 14.2926 8.70711C14.4801 8.89464 14.7345 9 14.9997 9C15.2649 9 15.5193 8.89464 15.7068 8.70711C15.8943 8.51957 15.9997 8.26522 15.9997 8C15.9997 6.93913 15.5783 5.92172 14.8281 5.17157C14.078 4.42143 13.0605 4 11.9997 4C11.7345 4 11.4801 4.10536 11.2926 4.29289C11.105 4.48043 10.9997 4.73478 10.9997 5C10.9997 5.26522 11.105 5.51957 11.2926 5.70711C11.4801 5.89464 11.7345 6 11.9997 6C12.5301 6 13.0388 6.21071 13.4139 6.58579C13.789 6.96086 13.9997 7.46957 13.9997 8Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+
+                <a href="#toggleMobileMenu" class="ms-3 me-1 text-decoration-none" title="menu" data-bs-toggle="offcanvas"
+                   role="button" aria-controls="toggleMobileMenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14"
+                         fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0 7C0 6.44772 0.447715 6 1 6H19C19.5523 6 20 6.44772 20 7C20 7.55228 19.5523 8 19 8H1C0.447715 8 0 7.55228 0 7Z"
+                              fill="currentColor" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0 1C0 0.447715 0.447715 0 1 0H19C19.5523 0 20 0.447715 20 1C20 1.55228 19.5523 2 19 2H1C0.447715 2 0 1.55228 0 1Z"
+                              fill="currentColor" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0 13C0 12.4477 0.447715 12 1 12H19C19.5523 12 20 12.4477 20 13C20 13.5523 19.5523 14 19 14H1C0.447715 14 0 13.5523 0 13Z"
+                              fill="currentColor" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Mobile Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start bg-primary offcanvas-mobile-menu" tabindex="-1"
+                 id="toggleMobileMenu" aria-labelledby="toggleMobileMenu">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center mobile-menu-brand-name"
+                       href="index.html">
+                        <!-- Brand Logo/Mark -->
+                        <img alt="Naples-property appraiser" fetchpriority="low" async="true" defer="true"
+                             src="logo.png" onerror="this.remove()" style="display: inherit" height="40" />
+                        <!-- Brand Name -->
+                        <span class="small">Naples-property appraiser</span>
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body px-0">
+                    <ul class="navbar-nav vstack navbar-mobile-menu mobile-menu-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link {{home_active}} ps-3 fw-semibold">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#servicesMenu" class="nav-link ps-3 fw-semibold dropdown-toggle {{service_active}}"
+                               data-bs-toggle="collapse" role="button" aria-expanded="false"
+                               aria-controls="servicesMenu">
+                                Services
+                            </a>
+
+                            <ul class="collapse p-0 py-2 " id="servicesMenu">
+                                <a class="custom-nav-link dropdown-item ps-4 py-1" href="property-inspection.html">Property Inspection</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="property-valuation.html">Property Valuation</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item" style="display: list-item">
+                            <a href="#servicesAreasMenu" class="ps-3 fw-semibold dropdown-toggle sub-nav-link active"
+                               data-bs-toggle="collapse" role="button" aria-expanded="false"
+                               aria-controls="servicesAreasMenu" style="text-decoration: none">
+                                Service Areas
+                            </a>
+
+                            <ul class="collapse p-0 py-2 " id="servicesAreasMenu">
+                                <ul class="list-unstyled"><li class="custom-nav-sub-item-mobile"><a class="custom-nav-link dropdown-item ps-4 py-1" href="immokalee.html">Immokalee</a>
+                    <div class="custom-sub-dropdown-mobile slideup py-2 rounded-3 bg-primary"><a class="custom-nav-link dropdown-item ps-4 py-1" href="arrowhead-immokalee.html">Arrowhead</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="collier-village-immokalee.html">Collier Village</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="cypress-green-immokalee.html">Cypress Green</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="davenport-immokalee.html">Davenport</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="faith-landing-immokalee.html">Faith Landing</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="garden-lake-apartments-immokalee.html">Garden Lake Apartments</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="garden-walk-village-immokalee.html">Garden Walk Village</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="heritage-immokalee.html">Heritage</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="immokalee-senior-housing-immokalee-1.html">Immokalee Senior Housing</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="lake-trafford-marina-immokalee-1.html">Lake Trafford Marina</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="liberty-landing-immokalee-1.html">Liberty Landing</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="sanders-pines-immokalee-1.html">Sanders Pines</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="south-immokalee-immokalee-1.html">South Immokalee</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="summer-glen-apartments-immokalee-1.html">Summer Glen Apartments</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="timber-ridge-immokalee-1.html">Timber Ridge</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="immokalee-highlands-immokalee-1.html">Immokalee Highlands</a></div></li></ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item" style="display: ">
+                            <a href="blog.html" class="nav-link ps-3 fw-semibold {{blog_active}}">Blog</a>
+                        </li>
+                        <li class="nav-item" style="display: ">
+                            <a href="aboutus.html" class="nav-link ps-3 fw-semibold {{about_us_active}}">About Us</a>
+                        </li>
+                        <li class="nav-item" style="display: none">
+                            <a href="contact.html" class="nav-link ps-3 fw-semibold {{contact_active}}">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="mt-5 px-3 d-inline-flex gap-4 align-items-center mobile-menu-icons">
+                        <!-- Social Icon(s) -->
+                        <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                 class="bi bi-facebook mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+
+                        <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                 class="bi bi-instagram mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+
+                        <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                 class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                        </a>
+
+                        <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                 class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
+                                <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
+
+                            </svg>
+                        </a>
+
+                        <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                 class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="ms-auto d-none d-lg-block">
+                <ul class="navbar-nav hstack gap-3 gap-lg-4 navbar-desktop-menu">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link fw-medium {{home_active}}">Home</a>
+                    </li>
+                    <li class="nav-item custom-nav-item ">
+                        <a href="services.html" class="nav-link fw-medium {{service_active}}" >Services</a>
+                        <div class="custom-dropdown slideup py-2 rounded-3 bg-primary">
+                            <a class="custom-nav-link dropdown-item ps-4 py-1" href="property-inspection.html">Property Inspection</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="property-valuation.html">Property Valuation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item custom-nav-item " style="display: list-item">
+                        <a href="#servicesAreasMenu" data-bs-toggle="collapse" class="nav-link fw-medium active" >Service Areas</a>
+                        <div class="custom-dropdown slideup py-2 rounded-3 bg-primary">
+                            <ul class="list-unstyled"><li class="custom-nav-sub-item"><a class="custom-nav-link dropdown-item ps-4 py-1" href="immokalee.html">Immokalee</a>
+                    <div class="custom-sub-dropdown slideup py-2 rounded-3 bg-primary"><a class="custom-nav-link dropdown-item ps-4 py-1" href="arrowhead-immokalee.html">Arrowhead</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="collier-village-immokalee.html">Collier Village</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="cypress-green-immokalee.html">Cypress Green</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="davenport-immokalee.html">Davenport</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="faith-landing-immokalee.html">Faith Landing</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="garden-lake-apartments-immokalee.html">Garden Lake Apartments</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="garden-walk-village-immokalee.html">Garden Walk Village</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="heritage-immokalee.html">Heritage</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="immokalee-senior-housing-immokalee-1.html">Immokalee Senior Housing</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="lake-trafford-marina-immokalee-1.html">Lake Trafford Marina</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="liberty-landing-immokalee-1.html">Liberty Landing</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="sanders-pines-immokalee-1.html">Sanders Pines</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="south-immokalee-immokalee-1.html">South Immokalee</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="summer-glen-apartments-immokalee-1.html">Summer Glen Apartments</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="timber-ridge-immokalee-1.html">Timber Ridge</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="immokalee-highlands-immokalee-1.html">Immokalee Highlands</a></div></li></ul>
+                        </div>
+                    </li>
+                    <li class="nav-item " style="display: ">
+                        <a href="blog.html" class="nav-link fw-medium {{blog_active}}">Blog</a>
+                    </li>
+                    <li class="nav-item " style="display: ">
+                        <a href="aboutus.html" class="nav-link fw-medium {{about_us_active}}">About Us</a>
+                    </li>
+                    <li class="nav-item " style="display: none">
+                        <a href="contact.html" class="nav-link fw-medium {{contact_active}}">Contact Us</a>
+                    </li>
+                    <li class="nav-item" style="display: none">
+                        <a href="tel:" title="Contact Number" class="btn btn-sm btn-primary fw-medium px-2">
+                            Call <span class="d-none d-xl-inline-block"></span>
+                            <span class="d-xl-none">Now</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Content -->
+    <div class="card-img-overlay px-3 text-center header-content">
+        <div class="vstack justify-content-center align-items-center h-100 mt-5">
+            <h1 class="display-5 text-capitalize fw-bold"><span>Cypress Green, Immokalee</span></h1>
+            <div class="row justify-content-center mt-5 mt-md-0">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+
+                    <p class="mt-4 mb-0 head-tagline">
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="my-4 mb-lg-0 w-100" style="font-size: 20px; display: none">
+                <a href="tel:"
+                   class="btn btn-primary d-md-inline-flex hstack justify-content-center gap-3 gap-md-4 px-2 px-sm-4 shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                         class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                    <span style="font-size: 20px;"></span>
+                </a>
+            </div>
+
+            <!--            <nav aria-label="breadcrumb" class="fw-medium">-->
+            <!--                <ol class="breadcrumb mb-0">-->
+            <!--                    -->
+            <!--                    <li class="breadcrumb-item">-->
+            <!--                        <a href="javascript:void(0)" class="text-decoration-none">Home</a>-->
+            <!--                    </li>-->
+
+            <!--                    <li class="breadcrumb-item active" aria-current="page">Services</li>-->
+            <!--                </ol>-->
+            <!--            </nav>-->
+        </div>
+    </div>
+</header>
+
+
+<!-- Service Details -->
+<section id="service-details" class="bg-section-dark px-3 py-5">
+    <header class="py-2 border-bottom mb-4" style="display: none">
+        <div class="ql-editor py-4 " id="sitewide-header">
+            
+        </div>
+    </header>
+    <div class="container-md px-0 px-md-3 py-md-5" id="service-content-section">
+        <div class="row g-4 section-content">
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="locations-section" class="bg-section-dark px-3 py-5">
+    <div class="bg-section-light px-0 mx-5 mb-4" style="border-radius: 0.375rem;box-shadow: 0 0 14px 0px rgba(49, 44, 56, 0.6);">
+    <div class="container-md py-md-5">
+        <div class="px-3 py-5 p-md-5 pt-md-0">
+            <div class="row bg-section-light rounded g-0 g-md-4">
+                <div class="col-12 col-lg-7 section-content">
+                    <div class="card h-100 border-0 p-0 bg-section-light mt-5 mt-md-0">
+                        <div class="card-body p-2 pt-0">
+                            <h2 class="text-capitalize mt-3">
+                                Property Valuation
+                            </h2>
+
+                            <p>
+                                Property Valuation is a crucial service for anyone looking to understand the worth of their real estate assets in the ever-changing market. This process involves a comprehensive assessment of various factors, including location, market trends, comparable sales, and the property's overall condition. Accurate property valuation is essential for securing financing, making informed investment decisions, and setting competitive listing prices when selling a home. In areas like Immokalee and Cypress Green, where property values can fluctuate significantly based on local economic conditions and development trends, engaging a qualified expert is invaluable. With our deep understanding of the local market, we provide thorough and precise property valuation services that cater to your specific needs. Don't leave the value of your investment to chance; contact us today to schedule your property valuation and ensure you have a clear understanding of your asset's worth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 align-self-center mb-4">
+                    <div class="card h-100 border-0 rounded-4 bg-transparent">
+                        <img src="property-valuation-6127449.jpg" alt="Property Valuation" class="rounded-4 w-100">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div><div class="bg-section-light px-0 mx-5 mb-4" style="border-radius: 0.375rem;box-shadow: 0 0 14px 0px rgba(49, 44, 56, 0.6);">
+    <div class="container-md py-md-5">
+        <div class="px-3 py-5 p-md-5 pt-md-0">
+            <div class="row bg-section-light rounded g-0 g-md-4">
+                <div class="col-12 col-lg-7 section-content">
+                    <div class="card h-100 border-0 p-0 bg-section-light mt-5 mt-md-0">
+                        <div class="card-body p-2 pt-0">
+                            <h2 class="text-capitalize mt-3">
+                                Property Inspection
+                            </h2>
+
+                            <p>
+                                Property inspection is a crucial step in the real estate process, ensuring that buyers, sellers, and investors are fully informed about the condition and value of a property. Engaging in a thorough property inspection not only identifies existing issues but also provides insights into potential future concerns, helping stakeholders make educated decisions. Our experienced inspectors utilize advanced tools and techniques to assess various aspects of the property, from structural integrity to compliance with local regulations. This comprehensive approach guarantees that you receive an accurate evaluation, enhancing your confidence in the transaction. Whether you are considering purchasing a new home or selling your property, our property inspection services are designed to deliver peace of mind and facilitate smoother negotiations. Don’t leave your investment to chance; get in touch today to schedule your property inspection and ensure you have all the information you need to make the best decision!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 align-self-center mb-4">
+                    <div class="card h-100 border-0 rounded-4 bg-transparent">
+                        <img src="property-inspection-6127459.jpg" alt="Property Inspection" class="rounded-4 w-100">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section id="about-us-section" class="bg-section-dark p-md-5" style="display: ">
+    <div class="container-md px-md-3">
+        <div class="px-3 py-5 p-md-5">
+            <div class="row g-3">
+                <div class="container-sm mt-md-2 text-center section-content">
+                    <h2 class="text-capitalize my-3">
+                        Areas We Served
+                    </h2>
+                </div>
+                <div class="section-content location-service-section">
+                    <div class="row">
+                        <div class="col-6 mb-3">
+    <div >
+        <div class="location-title bg-light text-break"><h4>Property Valuation</h4></div>
+        <div>
+            <div><a href="property-valuation-arrowhead-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Arrowhead Property Valuation</a></div><div><a href="property-valuation-collier-village-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Collier Village Property Valuation</a></div><div><a href="property-valuation-davenport-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Davenport Property Valuation</a></div><div><a href="property-valuation-cypress-green-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Cypress Green Property Valuation</a></div><div><a href="property-valuation-heritage-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Heritage Property Valuation</a></div><div><a href="property-valuation-garden-lake-apartments-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Garden Lake Apartments Property Valuation</a></div><div><a href="property-valuation-garden-walk-village-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Garden Walk Village Property Valuation</a></div><div><a href="property-valuation-faith-landing-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Faith Landing Property Valuation</a></div><div><a href="property-valuation-immokalee-senior-housing-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Immokalee Senior Housing Property Valuation</a></div><div><a href="property-valuation-lake-trafford-marina-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Lake Trafford Marina Property Valuation</a></div><div><a href="property-valuation-liberty-landing-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Liberty Landing Property Valuation</a></div><div><a href="property-valuation-south-immokalee-immokalee.html" class="area-name small" style="text-decoration: none">
+                                South Immokalee Property Valuation</a></div><div><a href="property-valuation-summer-glen-apartments-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Summer Glen Apartments Property Valuation</a></div><div><a href="property-valuation-sanders-pines-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Sanders Pines Property Valuation</a></div><div><a href="property-valuation-immokalee-highlands-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Immokalee Highlands Property Valuation</a></div><div><a href="property-valuation-timber-ridge-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Timber Ridge Property Valuation</a></div>
+        </div>
+    </div>
+</div><div class="col-6 mb-3">
+    <div >
+        <div class="location-title bg-light text-break"><h4>Property Inspection</h4></div>
+        <div>
+            <div><a href="property-inspection-arrowhead-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Arrowhead Property Inspection</a></div><div><a href="property-inspection-collier-village-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Collier Village Property Inspection</a></div><div><a href="property-inspection-cypress-green-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Cypress Green Property Inspection</a></div><div><a href="property-inspection-davenport-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Davenport Property Inspection</a></div><div><a href="property-inspection-faith-landing-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Faith Landing Property Inspection</a></div><div><a href="property-inspection-garden-lake-apartments-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Garden Lake Apartments Property Inspection</a></div><div><a href="property-inspection-garden-walk-village-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Garden Walk Village Property Inspection</a></div><div><a href="property-inspection-heritage-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Heritage Property Inspection</a></div><div><a href="property-inspection-immokalee-senior-housing-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Immokalee Senior Housing Property Inspection</a></div><div><a href="property-inspection-lake-trafford-marina-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Lake Trafford Marina Property Inspection</a></div><div><a href="property-inspection-liberty-landing-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Liberty Landing Property Inspection</a></div><div><a href="property-inspection-sanders-pines-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Sanders Pines Property Inspection</a></div><div><a href="property-inspection-south-immokalee-immokalee.html" class="area-name small" style="text-decoration: none">
+                                South Immokalee Property Inspection</a></div><div><a href="property-inspection-summer-glen-apartments-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Summer Glen Apartments Property Inspection</a></div><div><a href="property-inspection-immokalee-highlands-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Immokalee Highlands Property Inspection</a></div><div><a href="property-inspection-timber-ridge-immokalee.html" class="area-name small" style="text-decoration: none">
+                                Timber Ridge Property Inspection</a></div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Locations -->
+<section id="locations-section" class="bg-section-light px-3 py-5" style="display: none">
+    <div class="container-md px-0 px-md-3 py-md-5">
+        <div class="row bg-section-light rounded g-0 g-md-4">
+            <div class="col-12 col-lg-6 align-self-center">
+                <div class="card h-100 border-0 p-0 bg-section-light" style="display: none">
+                    <iframe title="Locate Us"
+                            src=""
+                            class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 section-content">
+                <div class="card h-100 border-0 p-0 bg-section-light mt-5 mt-md-0">
+                    <div class="card-body p-2 pt-0">
+                        <small
+                            class="badge py-2 rounded-pill pill-dark text-uppercase fw-medium w-auto">Locations</small>
+
+                        <h2 class="text-capitalize mt-3">
+                            we serve the following areas
+                        </h2>
+
+                        <div class="row service-areas">
+                            {{related_areas}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Services -->
+<section id="related-section" class="bg-section-light px-3 py-5" style="display: none">
+    <div class="container-md px-0 px-md-3 py-md-5">
+        <div class="container-sm mb-5 text-center section-content">
+            <h3 class="text-capitalize mb-0">
+                Related Links
+            </h3>
+        </div>
+
+        <div class="row g-4 mt-md-5">
+            
+        </div>
+    </div>
+</section>
+
+<!-- Quotation Form -->
+
+
+
+
+
+<section class="bg-section-dark px-3 py-5 " style="display:none">
+    <div class="pb-5 ql-editor " id="sitewide-footer" >
+        
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-primary p-3">
+    <div class="container-md px-0 px-md-3 py-md-5">
+        <div class="my-md-5 p-2 p-xl-5 border border-dark">
+            <div class="row g-lg-3">
+                <div class="col-12 col-lg-7 col-xl-7">
+                    <div class="vstack gap-5">
+                        <div class="d-inline-flex gap-2 align-items-center">
+                            <a class="navbar-brand m-0 gap-2 align-items-center" href="index.html">
+                                <!-- Brand Logo/Mark -->
+                                <img alt="Naples-property appraiser" fetchpriority="low" async="true" defer="true"
+                                     style="display: inherit" src="logo.png" onerror="this.remove()"
+                                     height="100" />
+                                <!-- Brand Name -->
+                                <p class="fs-5 fw-medium" style="white-space: break-spaces;">Naples-property appraiser</p>
+                            </a>
+                        </div>
+
+                        <div style="display: none">
+                            <strong>Address:</strong>
+                            <p class="mb-0"></p>
+                        </div>
+
+                        <div style="display: none">
+                            <strong>Contact:</strong>
+                            <p class="mb-0">
+                                <a href="tel:" title="Contact Number"></a>
+                                <br>
+                                <a style="display: none" title="Email Address" href="mailto:"></a>
+                            </p>
+                        </div>
+
+                        <div class="d-inline-flex gap-4" style="display: none !important">
+                            <a href=""  title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                     class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                            </a>
+
+                            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                     class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a>
+                            <a href="" title="Twitter Link" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                     class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                                </svg>
+                            </a>
+
+                            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                     class="bi bi-pinterest-x" viewBox="0 0 496 512">
+                                    <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
+
+                                </svg>
+                            </a>
+
+
+                            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                     class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 col-xl-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 align-self-center">
+                            <div class="card h-50 border-0 p-0 bg-section-light" style="display: none">
+                                <iframe title="Locate Us"
+                                        src="" class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 mt-md-0">
+            <p>&copy; 2025 Naples-property appraiser. All rights reserved.</p>
+            <div class="d-flex justify-content-between">
+                <a href="privacy.html" class="text-start" style="display: inherit">Privacy Policy/a>
+                <a href="terms.html" class="text-center mx-md-4" style="display: inherit">Terms of Service</a>
+                <a href="sitemap.html" class="text-center mx-md-4" style="display: none">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery CDN -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+<!-- Bootstrap CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const quoteContainers = document.querySelectorAll('.quote-container');
+        
+        quoteContainers.forEach(container => {
+            const quote = container.textContent.trim();
+            
+            if (quote.length > 220) {
+                container.classList.remove('display-6');
+                container.classList.add('display-7');
+            }
+        });
+    });
+    
+    function openModal(imageElement) {
+        let modal = document.getElementById("imageModal");
+        // const zoomedImage = document.getElementById("zoomed_image");
+        // zoomedImage.src = imageElement.src;
+        var modalImg = document.getElementById("zoomed_image");
+        modal.style.display = "block";
+        modalImg.src = imageElement.src;
+
+// Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+    }
+    function closeModal(){
+        let modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+    }
+    // perform `js` actions
+    document.addEventListener("DOMContentLoaded", function () {
+        // add `sticky` styles to `navbar`
+        const topNavbar = document.querySelector('.top-navbar');
+        
+        // when user scroll
+        window.addEventListener('scroll', function () {
+            (window.scrollY >= 36) ? topNavbar.classList.add('bg-dark', 'navbar-border',
+                'border-bottom', 'fixed-top'): topNavbar.classList.remove('bg-dark',
+                'navbar-border', 'border-bottom', 'fixed-top');
+        });
+        
+        // when already scrolled
+        (window.scrollY >= 36) ? topNavbar.classList.add('bg-dark', 'navbar-border', 'border-bottom',
+            'fixed-top'): topNavbar.classList.remove('bg-dark', 'navbar-border', 'border-bottom',
+            'fixed-top');
+    });
+    
+    // perform `jQuery` actions
+    $(document).ready(function () {
+        const section = document.getElementById('service-details');
+        if (section && section.innerText.trim() === '') {
+            section.style.display = 'none';
+        }
+        const section_content = document.getElementById('service-content-section');
+        if (section_content && section_content.innerText.trim() === '') {
+            section_content.style.display = 'none';
+        }
+        
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 9000,
+            },
+            slidesPerView: 3,
+            spaceBetween: 10,
+            breakpoints: {
+                
+                200: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                1500: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                },
+                930: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                }
+            },
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            // Navigation arrows
+            navigation: {
+                enabled: true,
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+            // And if we need scrollbar
+            keyboard:true
+        });
+        
+        
+        // toggle `faq-card` visibility based on screen size
+        const cardContainer = $('#faqsCardContainer');
+        const loadMoreBtn = $('#btnLoadMoreFAQs');
+        const cards = $('.col-faq-card');
+        
+        function toggleCards() {
+            const screenWidth = $(window).width();
+            
+            // show all cards & hide Load More button when screen size >= 992px
+            if (screenWidth >= 992) {
+                cards.slideDown();
+                loadMoreBtn.slideUp();
+            } else {
+                // set no. of visible cards for smaller screens
+                const visibleCardsCount = screenWidth >= 768 ? 4 : 3;
+                
+                cards.each(function (index) {
+                    (index < visibleCardsCount) ? $(this).slideDown(): $(this).slideUp();
+                });
+                
+                // show/hide Load More button based on no. of visible cards
+                (visibleCardsCount < cards.length) ? loadMoreBtn.slideDown(): loadMoreBtn.slideUp();
+            }
+        }
+        
+        // initial call to toggleCards function
+        toggleCards();
+        
+        // show more cards on clicking Load More button
+        loadMoreBtn.on('click', function () {
+            const visibleCardsCount = $('.col-faq-card:visible').length;
+            const screenWidth = $(window).width();
+            const newVisibleCardsCount = screenWidth >= 768 ? visibleCardsCount + 4 :
+                visibleCardsCount + 3;
+            
+            // show additional cards
+            cards.each(function (index) {
+                if (index >= visibleCardsCount && index < newVisibleCardsCount && index <
+                    cards.length) {
+                    $(this).slideDown();
+                }
+            });
+            
+            // hide Load More button if all cards are visible
+            if (newVisibleCardsCount >= cards.length) {
+                loadMoreBtn.slideUp();
+            }
+        });
+        
+        // show/hide `FAQs` cards on window resize
+        $(window).on('resize', function () {
+            toggleCards();
+        });
+    });
+</script>
+<script>
+    const url = window.location.href;
+    const filename = url.substring(url.lastIndexOf("/") + 1);
+    const element = document.querySelector(`a[href="${filename}"]`);
+    
+    // Check if the element exists
+    if (element) {
+        // Add a class to the element
+        element.classList.add("active");
+    }
+    let domain = (new URL(url));
+    let hostname = domain.hostname;
+    let pathname = domain.pathname.split('/');
+    let protocol = domain.protocol;
+    let domain_url =  protocol +'//'+hostname+'/';
+    if(pathname.length > 2){
+        domain_url =  domain_url +pathname.slice(1,pathname.length - 1).join('/')+'/'+document.querySelectorAll('[rel="canonical"]')[0].getAttribute('href');
+    }else{
+        domain_url =  domain_url +document.querySelectorAll('[rel="canonical"]')[0].getAttribute('href');
+    }
+    document.querySelectorAll('[rel="canonical"]')[0].setAttribute('href', domain_url);
+</script>
+
+</body>
+
+</html>
